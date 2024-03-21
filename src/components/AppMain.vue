@@ -108,7 +108,7 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sost2">Sostenibilità</div>
+                    <div class="box sost">Sostenibilità</div>
 
                     <img src="/img/6.webp" alt="" class="first-img">
                     <img src="/img/6b.webp" alt="" class="second img">
