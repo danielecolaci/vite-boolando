@@ -12,7 +12,7 @@ export default {
 <template>
 
     <header>
-        <div class="flex-header">
+        <div class="flex header-container">
             <nav class="link">
                 <ul>
                     <li><a href="">Donna</a></li>

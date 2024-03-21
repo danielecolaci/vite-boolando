@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flex,
+ul {
+    display: flex;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+
+/* To export in style component files */
+
+/* Header */
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #FF6900;
+    z-index: 100;
+    box-shadow: 0 4px 4px #9E9E9E;
+}
+
+.header-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14%;
+    height: 70px;
+}
+
+header ul {
+    gap: 10px;
+}
+
+.logo {
+    width: 134px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo img {
+    width: 100%;
+}
+
+/* Main */
+
+main {
+    padding: 60px 14%;
+}
+
+.main-container {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: calc(100%/4);
+    margin: 20px 10px;
+    position: relative;
+}
+
+.box {
+    padding: 8px 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    z-index: 20;
+    bottom: 42px;
+}
+
+.sconto {
+    background-color: #ff0000;
+}
+
+.sost {
+    background-color: #008000;
+    left: 56px;
+}
+
+.sost2 {
+    background-color: #008000;
+}
+
+.fav {
+    background-color: white;
+    padding: 10px;
+    position: absolute;
+    z-index: 20;
+    top: 10px;
+    right: 0;
+}
+
+.fav a {
+    color: black;
+    font-size: 24px;
+}
+
+.fav a:hover {
+    color: #ff0000;
+}
+
+.marca {
+    font-size: 14px;
+}
+
+.red-price {
+    display: inline-block;
+    margin-right: 5px;
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.black-price {
+    text-decoration: line-through;
+    font-size: 14px;
+}
+
+.card-img>img {
+    width: 100%;
+}
+
+.card-img {
+    position: relative;
+    width: 380px;
+}
+
+.first-img:hover {
+    opacity: 0;
+}
+
+.first-img {
+    position: absolute;
+    left: 0;
+    z-index: 0;
+}
+
+/* Footer */
+
+footer {
+    color: white;
+    background-color: #1a1a1a;
+    height: 110px;
+    padding-top: 30px;
+}
+
+.footer-container {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14%;
+}
+
+.footer-list ul {
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.footer-list a {
+    font-size: 25px;
+}
+
+.first {
+    font-size: 13px;
+}

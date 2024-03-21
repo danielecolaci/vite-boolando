@@ -12,7 +12,7 @@ export default {
 <template>
 
     <main>
-        <div class="flex-main">
+        <div class="flex main-container">
             <div class="card one">
                 <div class="card-img">
                     <div class="fav">

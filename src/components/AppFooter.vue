@@ -12,7 +12,7 @@ export default {
 <template>
 
     <footer>
-        <div class="flex-footer">
+        <div class="flex footer-container">
             <div class="Boolando">
                 <h3>Boolando s.r.l</h3>
                 <div class="footer-list first">
