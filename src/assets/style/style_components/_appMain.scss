@@ -1,17 +1,18 @@
 @use "./root" as *;
 
 main {
-    padding: 60px 14%;
+    padding: 60px 0;
 
     .main-container {
         flex-wrap: wrap;
         justify-content: center;
+        width: 72%;
+        margin: 0 auto;
 
         .card {
-            width: calc(100%/3 - 10px);
+            width: 380px;
             margin: 20px 10px;
             position: relative;
-            width: 380px;
 
             .card-img {
                 position: relative;
