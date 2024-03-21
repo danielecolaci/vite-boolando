@@ -27,23 +27,27 @@ main {
 
                 }
 
-                .box {
-                    padding: 8px 10px;
-                    color: white;
-                    font-size: 14px;
-                    font-weight: bold;
+                .boxes {
                     position: absolute;
                     z-index: 20;
                     bottom: 42px;
-                }
+                    gap: 5px;
 
-                .sconto {
-                    background-color: #ff0000;
-                }
+                    .box {
+                        padding: 8px 10px;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
 
-                .sost {
-                    background-color: #008000;
-                    left: 56px;
+                    .sconto {
+                        background-color: #ff0000;
+                    }
+
+                    .sost {
+                        background-color: #008000;
+                    }
+
                 }
 
                 .fav {

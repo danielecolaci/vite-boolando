@@ -18,8 +18,11 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sconto">-50%</div>
-                    <div class="box sost">Sostenibilità</div>
+
+                    <div class="boxes flex">
+                        <div class="box sconto">-50%</div>
+                        <div class="box sost">Sostenibilità</div>
+                    </div>
 
                     <img src="/img/1.webp" alt="" class="first-img">
                     <img src="/img/1b.webp" alt="" class="second img">
@@ -37,8 +40,9 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sconto">-30%</div>
-
+                    <div class="boxes flex">
+                        <div class="box sconto">-30%</div>
+                    </div>
                     <img src="/img/2.webp" alt="" class="first-img">
                     <img src="/img/2b.webp" alt="" class="second img">
                 </div>
@@ -55,8 +59,9 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sconto">-30%</div>
-
+                    <div class="boxes flex">
+                        <div class="box sconto">-30%</div>
+                    </div>
                     <img src="/img/3.webp" alt="" class="first-img">
                     <img src="/img/3b.webp" alt="" class="second img">
                 </div>
@@ -73,9 +78,10 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sconto">-50%</div>
-                    <div class="box sost">Sostenibilità</div>
-
+                    <div class="boxes flex">
+                        <div class="box sconto">-50%</div>
+                        <div class="box sost">Sostenibilità</div>
+                    </div>
                     <img src="/img/4.webp" alt="" class="first-img">
                     <img src="/img/4b.webp" alt="" class="second img">
                 </div>
@@ -108,8 +114,9 @@ export default {
                     <div class="fav">
                         <a href=""><i class="fa-solid fa-heart"></i></a>
                     </div>
-                    <div class="box sost">Sostenibilità</div>
-
+                    <div class="boxes flex">
+                        <div class="box sost">Sostenibilità</div>
+                    </div>
                     <img src="/img/6.webp" alt="" class="first-img">
                     <img src="/img/6b.webp" alt="" class="second img">
                 </div>
