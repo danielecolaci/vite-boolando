@@ -41,11 +41,11 @@ main {
                     }
 
                     .sconto {
-                        background-color: #ff0000;
+                        background-color: $red-color;
                     }
 
                     .sost {
-                        background-color: #008000;
+                        background-color: $green-color;
                     }
 
                 }
@@ -63,7 +63,7 @@ main {
                         font-size: 24px;
 
                         &:hover {
-                            color: #ff0000;
+                            color: $red-color;
                         }
 
                     }
@@ -79,7 +79,7 @@ main {
             .red-price {
                 display: inline-block;
                 margin-right: 5px;
-                color: #ff0000;
+                color: $red-color;
                 font-weight: bold;
                 font-size: 14px;
             }

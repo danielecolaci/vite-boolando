@@ -6,10 +6,9 @@ header {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #FF6900;
+    background-color: $header-color;
     z-index: 100;
     box-shadow: 0 4px 4px #9E9E9E;
-
 
     .header-container {
         justify-content: space-between;
