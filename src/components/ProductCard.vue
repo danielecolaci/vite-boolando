@@ -1,6 +1,17 @@
 <script>
 export default {
     name: 'ProductCard',
+    props: {
+        brand: String,
+        model: String,
+        finalPrice: String,
+        oldPrice: String,
+        discountPercentage: Number,
+        sustainability: Boolean,
+        imageFirst: String,
+        imageSecond: String,
+        product: Object
+    },
     data() {
         return {
 
@@ -22,14 +33,14 @@ export default {
                 <div class="box green">Sostenibilità</div>
             </div>
 
-            <img src="/img/1.webp" alt="" class="first-img">
-            <img src="/img/1b.webp" alt="">
+            <img :src="imageFirst" alt="" class="first-img">
+            <img :src="imageSecond" alt="">
         </div>
         <div class="card-text">
-            <p class="brand">Levi's</p>
-            <h2>RELAXED FIT TEE UNISEX</h2>
-            <p class="final-price">14,99 €</p>
-            <span class="old-price">29,99 €</span>
+            <p class="brand">{{ brand }}</p>
+            <h2>{{ model }}</h2>
+            <p class="final-price">{{ finalPrice }}</p>
+            <span class="old-price">{{ oldPrice }}</span>
         </div>
     </div>
 
