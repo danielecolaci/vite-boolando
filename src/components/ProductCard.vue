@@ -14,7 +14,7 @@ export default {
     <div class="card">
         <div class="card-img">
             <div class="fav">
-                <a href=""><i class="fa-solid fa-heart"></i></a>
+                <button><i class="fa-solid fa-heart"></i></button>
             </div>
 
             <div class="boxes flex">
