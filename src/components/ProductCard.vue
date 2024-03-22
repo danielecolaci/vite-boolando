@@ -29,8 +29,8 @@ export default {
             </div>
 
             <div class="boxes flex">
-                <div class="box red">-50%</div>
-                <div class="box green">Sostenibilità</div>
+                <div class="box red" v-if="discountPercentage !== null">-{{ discountPercentage }}%</div>
+                <div class="box green" v-if="sustainability === true">Sostenibilità</div>
             </div>
 
             <img :src="imageFirst" alt="" class="first-img">
