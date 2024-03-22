@@ -42,11 +42,11 @@ main {
                         font-weight: bold;
                     }
 
-                    .sconto {
+                    .red {
                         background-color: $red-color;
                     }
 
-                    .sost {
+                    .green {
                         background-color: $green-color;
                     }
 
@@ -74,11 +74,11 @@ main {
 
             }
 
-            .marca {
+            .brand {
                 font-size: 14px;
             }
 
-            .red-price {
+            .final-price {
                 display: inline-block;
                 margin-right: 5px;
                 color: $red-color;
@@ -86,7 +86,7 @@ main {
                 font-size: 14px;
             }
 
-            .black-price {
+            .old-price {
                 text-decoration: line-through;
                 font-size: 14px;
             }
