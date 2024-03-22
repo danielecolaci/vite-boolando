@@ -10,12 +10,8 @@ export default {
         sustainability: Boolean,
         imageFirst: String,
         imageSecond: String,
+        favorite: Boolean,
         product: Object
-    },
-    data() {
-        return {
-
-        }
     }
 }
 </script>
@@ -25,7 +21,8 @@ export default {
     <div class="card">
         <div class="card-img">
             <div class="fav">
-                <button><i class="fa-solid fa-heart"></i></button>
+                <button :class="{ 'true': favorite, 'false': !favorite }" @click="favorite = !favorite"><i
+                        class="fa-solid fa-heart"></i></button>
             </div>
 
             <div class="boxes flex">

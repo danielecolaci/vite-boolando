@@ -23,7 +23,7 @@ export default {
             <ProductCard v-for="product in products" :key="product.id" :brand="product.brand" :model="product.model"
                 :finalPrice="product.finalPrice" :oldPrice="product.oldPrice"
                 :discountPercentage="product.discountPercentage" :sustainability="product.sustainability"
-                :imageFirst="product.imageFirst" :imageSecond="product.imageSecond" />
+                :imageFirst="product.imageFirst" :imageSecond="product.imageSecond" :favorite="product.favorite" />
 
         </div>
     </main>

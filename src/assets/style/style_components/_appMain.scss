@@ -61,7 +61,6 @@ main {
                     right: 0;
 
                     button {
-                        color: black;
                         font-size: 24px;
                         border: none;
                         background-color: white;
@@ -71,6 +70,14 @@ main {
                             color: $red-color;
                         }
 
+                    }
+
+                    .false {
+                        color: black;
+                    }
+
+                    .true {
+                        color: $red-color;
                     }
 
                 }
