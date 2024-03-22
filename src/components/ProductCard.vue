@@ -20,7 +20,7 @@ export default {
 
     <div class="card">
         <div class="card-img">
-            <div class="fav">
+            <div class="fav flex">
                 <button :class="{ 'true': favorite, 'false': !favorite }" @click="favorite = !favorite"><i
                         class="fa-solid fa-heart"></i></button>
             </div>

@@ -54,11 +54,14 @@ main {
 
                 .fav {
                     background-color: white;
-                    padding: 10px;
+                    height: 44px;
+                    width: 44px;
                     position: absolute;
                     z-index: 20;
                     top: 10px;
                     right: 0;
+                    justify-content: center;
+                    align-items: center;
 
                     button {
                         font-size: 24px;
@@ -67,7 +70,7 @@ main {
                         cursor: pointer;
 
                         &:hover {
-                            color: $red-color;
+                            font-size: 28px;
                         }
 
                     }
