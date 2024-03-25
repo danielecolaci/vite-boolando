@@ -36,8 +36,12 @@ export default {
         <div class="card-text">
             <p class="brand">{{ brand }}</p>
             <h2>{{ model }}</h2>
-            <p class="final-price">{{ price }}</p>
-            <!-- <span class="old-price">{{ oldPrice }}</span> -->
+            <p class="final-price" v-if="badges[badges.length - 1].type == 'discount'">
+                {{ (price + (price * parseFloat(badges[badges.length - 1].value) / 100)).toFixed(0) - 0.01 }} €
+            </p>
+            <p class="final-price" v-else>{{ price }} €</p>
+            <span class="old-price" v-if="badges[badges.length - 1].type == 'discount'">{{ price }} €
+            </span>
         </div>
     </div>
 
