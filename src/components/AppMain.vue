@@ -25,8 +25,8 @@ export default {
         <div class="flex main-container">
 
             <ProductCard v-for="product in state.products" :key="product.id" :brand="product.brand"
-                :model="product.name" :finalPrice="product.price" :sustainability="product.sustainability"
-                :imageFirst="product.frontImage" :imageSecond="product.backImage" :favorite="product.favorite" />
+                :model="product.name" :price="product.price" :imageFirst="product.frontImage"
+                :imageSecond="product.backImage" :favorite="product.isInFavorites" :badges="product.badges" />
 
         </div>
     </main>
