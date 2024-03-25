@@ -10,7 +10,7 @@ export const state = reactive({
         axios
             .get(url)
             .then(response => {
-                console.log(response);
+                /* console.log(response); */
                 this.products = response.data
             })
             .catch(err => {

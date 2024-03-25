@@ -13,7 +13,7 @@ export default {
         }
     },
     mounted() {
-        console.log(this.state);
+        /* console.log(this.state); */
         this.state.getProducts(this.state.product_api_url)
     }
 }
@@ -25,9 +25,8 @@ export default {
         <div class="flex main-container">
 
             <ProductCard v-for="product in state.products" :key="product.id" :brand="product.brand"
-                :model="product.model" :finalPrice="product.finalPrice" :oldPrice="product.oldPrice"
-                :discountPercentage="product.discountPercentage" :sustainability="product.sustainability"
-                :imageFirst="product.imageFirst" :imageSecond="product.imageSecond" :favorite="product.favorite" />
+                :model="product.name" :finalPrice="product.price" :sustainability="product.sustainability"
+                :imageFirst="product.frontImage" :imageSecond="product.backImage" :favorite="product.favorite" />
 
         </div>
     </main>
