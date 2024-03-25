@@ -1,6 +1,7 @@
 <script>
 import ProductCard from './ProductCard.vue'
 import { products } from '../data.js'
+import { state } from '../state.js'
 
 export default {
     name: 'AppMain',
@@ -9,8 +10,13 @@ export default {
     },
     data() {
         return {
-            products
+            products,
+            state
         }
+    },
+    mounted() {
+        console.log(this.state);
+        this.state.getProducts(this.state.product_api_url)
     }
 }
 </script>
