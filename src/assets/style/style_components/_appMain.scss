@@ -91,26 +91,22 @@ main {
                 font-size: 14px;
             }
 
-            h2 {
-                text-transform: uppercase;
-                cursor: pointer;
-            }
-
-            .final-price {
-                display: inline-block;
-                margin-right: 5px;
-                color: $red-color;
-                font-weight: bold;
-                font-size: 14px;
-            }
-
-            .old-price {
-                text-decoration: line-through;
-                font-size: 14px;
-            }
 
         }
 
     }
 
+}
+
+.final-price {
+    display: inline-block;
+    margin-right: 5px;
+    color: $red-color;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.old-price {
+    text-decoration: line-through;
+    font-size: 14px;
 }
