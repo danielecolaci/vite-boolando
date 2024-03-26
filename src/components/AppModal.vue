@@ -13,6 +13,7 @@ export default {
         <div class="modal">
             <h3>{{ productId.name }}</h3>
             <h5>{{ productId.brand }}</h5>
+            <button @click="productId = null">x</button>
         </div>
     </div>
 
@@ -40,5 +41,11 @@ export default {
     top: 0%;
     left: 0%;
     z-index: 90;
+}
+
+button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
 }
 </style>
