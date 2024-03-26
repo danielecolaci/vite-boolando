@@ -24,6 +24,10 @@ export default {
             } else {
                 return this.price;
             }
+        },
+        showProduct(product) {
+            console.log("Product clicked:", this.product);
+            this.$emit('modal', this.product)
         }
     }
 }
@@ -51,7 +55,7 @@ export default {
         </div>
         <div class="card-text">
             <p class="brand">{{ brand }}</p>
-            <h2>{{ model }}</h2>
+            <h2 @click="showProduct()">{{ model }}</h2>
             <p class="final-price">
                 {{ finalPrice() }} €
             </p>

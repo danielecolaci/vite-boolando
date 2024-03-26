@@ -1,16 +1,21 @@
 <script>
 export default {
-    name: 'AppModal'
+    name: 'AppModal',
+    props: {
+        productId: Object
+    }
 }
 </script>
 
 <template>
-    <div class="background">
+
+    <div class="background" v-if="productId">
         <div class="modal">
-            <h2>model</h2>
-            <h5>brand</h5>
+            <h3>{{ productId.name }}</h3>
+            <h5>{{ productId.brand }}</h5>
         </div>
     </div>
+
 </template>
 
 <style lang="scss">

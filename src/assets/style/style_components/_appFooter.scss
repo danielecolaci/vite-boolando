@@ -5,6 +5,8 @@ footer {
     background-color: $footer-color;
     height: 110px;
     padding-top: 30px;
+    position: relative;
+    z-index: 200;
 
 
     .footer-container {
