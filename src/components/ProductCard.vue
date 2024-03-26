@@ -10,8 +10,24 @@ export default {
         imageSecond: String,
         favorite: Boolean,
         product: Object
+    },
+    data() {
+        return {
+
+        }
+    },
+    methods: {
+        finalPrice() {
+            if (this.badges[this.badges.length - 1].type == 'discount') {
+                const discountedPrice = parseFloat(this.badges[this.badges.length - 1].value);
+                return (this.price + (this.price * discountedPrice / 100)).toFixed(0) - 0.01;
+            } else {
+                return this.price;
+            }
+        }
     }
 }
+
 </script>
 
 <template>
@@ -36,11 +52,11 @@ export default {
         <div class="card-text">
             <p class="brand">{{ brand }}</p>
             <h2>{{ model }}</h2>
-            <p class="final-price" v-if="badges[badges.length - 1].type == 'discount'">
-                {{ (price + (price * parseFloat(badges[badges.length - 1].value) / 100)).toFixed(0) - 0.01 }} €
+            <p class="final-price">
+                {{ finalPrice() }} €
             </p>
-            <p class="final-price" v-else>{{ price }} €</p>
-            <span class="old-price" v-if="badges[badges.length - 1].type == 'discount'">{{ price }} €
+            <span class="old-price" v-if="badges[badges.length - 1].type == 'discount'">
+                {{ price }} €
             </span>
         </div>
     </div>
